@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Изучаем язык JavaScript</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var text = "Число PI - " + Math.PI;
+        text += "\nЧисло E - " + Math.E;
+        text += "\nМодуль -7 - " + Math.abs(-7);
+        text += "\nСинус 0.3 - " + Math.sin(0.3);
+        text += "\nСлучайное число - " + Math.random();
+        text += "\nСлучайное число от 0 до 10 - " + Math.floor(Math.random() * 11);
+        alert(text);
+
+
+        var date = new Date();
+        text = "Год сейчас - " + date.getFullYear();
+        text += "\nМесяц сейчас - " + date.getMonth();
+        text += "\nДень сейчас - " + date.getDate();
+        text += "\nЧасов сейчас - " + date.getHours();
+        text += "\nМинут сейчас - " + date.getMinutes();
+        text += "\nСекунд сейчас - " + date.getSeconds();
+        //alert(text);
+
+        var date = new Date(2000, 0, 12, 14, 23, 43);
+        date.setMinutes(42);
+        text = "Год сейчас - " + date.getFullYear();
+        text += "\nМесяц сейчас - " + date.getMonth();
+        text += "\nДень сейчас - " + date.getDate();
+        text += "\nЧасов сейчас - " + date.getHours();
+        text += "\nМинут сейчас - " + date.getMinutes();
+        text += "\nСекунд сейчас - " + date.getSeconds();
+        alert(text);
+
+
+        var arr = new Array (2, 3, 56, 12, 23, 590, 123, 2);
+        text = "Длина массива - " + arr.length;
+        text += "\nМассив состоит из - " + arr.join(", ");
+        text += "\nСортированный массив - " + (arr.soft()).join(", ");
+        alert(text);
+
+
+        var string = "Небольшая строка";
+
+        var text = "Длина строки равна - " + string.length;
+        text += "\nСтрока в верхнем регистре - " + string.toUpperCase();
+        text += "\nСтрока в нижнем регистре - " + string.toLowerCase();
+        text += "\nОбрезанная строка - " + string.substring(0, 5);
+        text += "\n3-й символ это - " + string.charAt(3);
+        text += "\n'Стро' начинается с индекса - " + string.index0f('стро');
+        alert(text);
+    </script>
+</body>
+</html>

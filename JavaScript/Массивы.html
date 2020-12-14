@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Изучаем язык JavaScript</title>
+</head>
+<body>
+	<script type="text/javascript">
+        var arr = new Array("str", 1.23, 7, false);
+        for (var i = 0; i < arr.length; i++) 
+            document.write(arr[i] + '<br>');
+        arr = new Array();
+        for (i = 0; i < 10; i++) {
+            arr[i] = i * 3;
+            document.write(arr[i] + "<br>");
+        }
+        var summ = 0;
+        for(i =  0; i < arr.length; i++) 
+            summ += arr[i];
+        document.write("Среднее арифметическое значение - " + (summ / arr.length));
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+
+        var arr_1 = new Array();
+        var arr_2 = new Array();
+        var arr_3 = new Array();
+        for (var i = 0; i < 5; i++) arr_1[i] = i;
+        for (var i = 0; i < 10; i++) arr_2[i] = i;
+        for (var i = 0; i < 15; i++) arr_3[i] = i;
+
+        var arr = new Array(arr_1, arr_2, arr_3);
+        for(var x = 0; x < arr.length; x++) {
+            for(var j = 0; j < arr[x].length; j++) {
+                document.write(arr[x] [j] + " ");
+            }
+            document.write("<br>");
+        }
+
+    </script>    
+        
+</body>
+</html>

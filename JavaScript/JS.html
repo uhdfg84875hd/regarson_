@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Изучаем язык JavaScript</title>
+</head>
+<body>
+	<script type="text/javascript">
+	    var b = 5;
+        var n;
+        var result;
+        n = 5;
+        result = b + n;
+        document.write(result);
+        result *= b;
+        document.write("<br>" + result);
+        result--;
+        document.write("<br>" + result);
+        document.write("<br>");
+        document.write(b + " + " + n + " = " + (b + n));
+        document.write("<br>");
+        var str_1 = "12";
+        var str_2 = "24";
+        document.write(Number(str_1) + Number(str_2));
+        document.write("<br>");
+        var bool;
+        var z = 7;
+        var d = 7;
+        bool = z >= d;
+        document.write(bool);
+        document.write("<br>");
+        document.write(10 + " % " + 7 + " = " + (10 % 7));
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+        var x = 5;
+        var y = 5;
+        if (x > y) 
+        	    document.write("x > y");
+        else if(x == y)
+        	document.write("x == y");
+        else 
+        	document.write("x < y");
+        document.write("<br>");
+        
+        var result = 5
+        switch(result) {
+        	case 1: document.write("result = 1"); break;
+        	case 2: document.write("result = 2"); break;
+        	case 3: document.write("result = 3"); break;
+        	case 4: document.write("result = 4"); break;
+        	default: document.write("result > 4");
+        }
+        document.write("<br>");
+        x >= y ? document.write("YES") : document.write("NO");
+
+    </script>    
+</body>
+</html>

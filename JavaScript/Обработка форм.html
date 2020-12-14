@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Изучаем язык JavaScript</title>
+    <script type="text/javascript">
+        function valid (form) {
+            var fail = false;
+            var name = form.name.value;
+            if(name == "" || name == "")
+                fail = "Вы не ввели свое имя";
+
+            if(fail) {
+                alert(fail);
+                return false;
+            } else {
+                return true;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="" method="post" name="test" onsubmit="valid(this)">
+        <label for="name">Имя:</label>
+        <input type="text" name="name" placeholder="Имя" id="name"><br><br>
+        <label for="password">Пароль:</label>
+        <input type="password" name="password" placeholder="Пароль" id="password"><br><br>
+        <label for="RePassword">Проверка пароля:</label>
+        <input type="password" name="RePassword" placeholder="Введите пароль" id="RePassword"><br><br>
+        <span>Пол:</span>
+        <input type="radio" name="state" id="Male" value="Мужской">
+<label for="Male">Мужской</label>
+        <input type="radio" name="state" id="Female" value="Женский">
+<label for="Female">Женский</label><br><br>
+        <input type="submit" name="submit" value="Готово"><br>
+    </form>
+</body>
+</html>
